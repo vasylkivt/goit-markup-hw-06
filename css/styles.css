@@ -459,10 +459,17 @@ body {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color-light);
+}
+.footer-subscribe-input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: var(--secondary-text-color-light);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-subscribe-btn {
   display: inline-flex;
