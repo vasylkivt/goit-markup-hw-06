@@ -339,7 +339,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer-content">
-        <div>
+        <div class="footer-wrap-text">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-footer">Studio</span></a
           >
@@ -348,8 +348,8 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
-          <p class="footer-social-media-text text">Social media</p>
+        <div class="footer-wrap-social-media">
+          <p class="footer-social-media-title text">Social media</p>
           <ul class="list footer-social-media-list">
             <li class="footer-social-mebia-item">
               <a
@@ -401,6 +401,24 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- form footer -->
+        <div>
+          <p class="footer-subscribe-title text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <input
+              name="email"
+              class="footer-subscribe-input"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="footer-subscribe-btn" type="submit">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-paper-plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

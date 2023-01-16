@@ -395,7 +395,9 @@ body {
 }
 .footer-content {
   display: flex;
-  gap: 120px;
+}
+.footer-wrap-text {
+  margin-right: 120px;
 }
 .footer .logo {
   margin-right: 0;
@@ -410,6 +412,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-light);
+}
+.footer-wrap-social-media {
+  margin-right: 80px;
 }
 .footer-social-media-title {
   margin-bottom: 16px;
@@ -450,12 +455,13 @@ body {
   align-items: center;
 }
 .footer-subscribe-input {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 24px;
   min-width: 264px;
+  height: 40px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -482,18 +488,18 @@ body {
   border-radius: 4px;
   min-width: 165px;
 
-  letter-spacing: 0.04em;
   color: var(--secondary-text-color-light);
   font-family: var(--primary-font-title);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 
   transition: background-color var(--time-and-style-of-transition);
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
-  background: #404bbf;
+  background: var(--primary-accent-color-hover);
 }
 
 /* ================== /Footer ================== */
@@ -674,27 +680,24 @@ body {
   flex-direction: column;
 }
 .form-text {
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-bottom: 34px;
+  margin-bottom: 14px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-title-color-dark);
 }
 .form-input-item {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
 .form-input-label {
   display: block;
   margin-bottom: 4px;
 
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
   color: #8e8f99;
 }
 .form-input-wrapper {
@@ -703,21 +706,23 @@ body {
 }
 .form-input {
   width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-right: 16px;
 
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #000000;
+
+  transition: border-color var(--time-and-style-of-transition);
 }
 .form-input:focus {
-  border: 1px solid var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
   outline: none;
 }
 .form-input-icon {
@@ -725,6 +730,8 @@ body {
   top: 50%;
   left: 19px;
   transform: translateY(-50%);
+
+  transition: fill var(--time-and-style-of-transition);
 }
 .form-input:focus + .form-input-icon {
   fill: var(--primary-accent-color);
@@ -734,6 +741,7 @@ body {
   margin-bottom: 16px;
 }
 .form-comment {
+  display: block;
   width: 100%;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -741,18 +749,18 @@ body {
   padding: 8px 16px;
   resize: none;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #000000;
+
+  transition: border-color var(--time-and-style-of-transition);
 }
 .form-comment:focus {
   border: 1px solid var(--primary-accent-color);
   outline: none;
 }
 .form-input-comment::placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -769,8 +777,8 @@ body {
   justify-content: center;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin-right: 8px;
 
   transition: background-color var(--time-and-style-of-transition),
